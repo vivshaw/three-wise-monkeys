@@ -11,14 +11,14 @@ The key to understanding how this works goes like so:
 ```Haskell
 -- What the heck is this?
 wisdom See no e vil is (no -> e -> vil) -> (no -> e) -> no -> vil
--- Well, take a look at the S combinator
-type S f x y = (f -> x -> y) (f -> x) f -> y
+-- Well, take a look at the S combinator:
+type S f x y = (f -> x -> y) -> (f -> x) -> f -> y
 -- Yup, the first monkey is just an obfuscated S combinator
 (🙈) :: See no e vil
 
--- So this one should be easier
+-- So this one should be easier:
 wisdom Hear no evil is no -> evil -> no
--- Compare to the K combinator
+-- Compare to the K combinator:
 type K x y = x -> y -> x
 -- Yup, the second monkey is just the K combinator (a.k.a const)
 (🙉) :: Hear no evil
