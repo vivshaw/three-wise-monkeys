@@ -1,0 +1,47 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 754dcc64cc5b39f0f58a37f4b749188f6fd6ad2efe9116e3830b450539f115f1
+
+name:           three-wise-monkeys
+version:        1.3.0.10
+build-type:     Simple
+
+library
+  exposed-modules:
+      ThreeWiseMonkeys
+  other-modules:
+      Paths_three_wise_monkeys
+  hs-source-dirs:
+      src
+  ghc-options: -Wall
+  build-depends:
+      base
+  default-language: Haskell2010
+
+executable stack-test-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_three_wise_monkeys
+  hs-source-dirs:
+      app
+  build-depends:
+      base
+    , three-wise-monkeys
+  default-language: Haskell2010
+
+test-suite test
+  type: exitcode-stdio-1.0
+  main-is: Tests.hs
+  other-modules:
+      Paths_three_wise_monkeys
+  hs-source-dirs:
+      test
+  build-depends:
+      base
+    , hspec
+    , three-wise-monkeys
+  default-language: Haskell2010

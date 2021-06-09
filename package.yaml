@@ -1,0 +1,28 @@
+name: three-wise-monkeys
+version: 1.3.0.10
+
+dependencies:
+  - base
+
+library:
+  exposed-modules: ThreeWiseMonkeys
+  source-dirs: src
+  ghc-options: -Wall
+  # dependencies:
+  # - foo       # List here the packages you
+  # - bar       # want to use in your solution.
+
+executables:
+  stack-test-exe:
+    main: Main.hs
+    source-dirs: app
+    dependencies:
+      - three-wise-monkeys
+
+tests:
+  test:
+    main: Tests.hs
+    source-dirs: test
+    dependencies:
+      - three-wise-monkeys
+      - hspec
