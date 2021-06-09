@@ -33,7 +33,7 @@ From here, we can construct the I combinator 🙊 (a.k.a. `id`), and have the wh
 Haskell is generous. Haskell loves you. Haskell allows arbitrary Unicode characters in identifiers and operators, because you deserve it.
 
  - Type names and variable names can have any Unicode letter or number in them, with the caveat that types must start with a `C`apital letter, and variables must start with a `l`owercase letter. As it turns out, you can use things like Hanzi, hangul, or kana as well- Haskell simply treats them as lowercase letters.
- - Operators names can have any non-special unicode symbol (pretty much everything except ``()|,;[]`{}_:"'``), including emoji. However YMMV - some symbols or combinations thereof will make GHCI wig out, especially anything 'bracket-like'.
+ - Operator names can have any non-special unicode symbol (pretty much everything except ``()|,;[]`{}_:"'``), including emoji. However YMMV - some symbols or combinations thereof will make GHC wig out, especially anything 'bracket-like'.
 
 ### `{-# LANGUAGE CPP #-}`
 
