@@ -1,6 +1,6 @@
-# Three Wise Monkeys
+# 🙈🙉🙊 Three Wise Monkeys 🙈🙉🙊
 
-An exercise in obfuscated Haskell vis-a-vis Buddhist ethics.
+An exercise in obfuscated Haskell vis-a-vis a primate proverb.
 
 ## What does it do?
 
